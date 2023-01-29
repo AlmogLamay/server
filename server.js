@@ -22,6 +22,7 @@ const cors = require('cors');
 app.use(cors());
 
 const server = http.createServer(app);
+server.use(cors());
 
 //client
 const io = new Server(server, {
