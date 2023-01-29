@@ -16,4 +16,4 @@ const blockSchema = new mongoose.Schema({
 	},
 });
 
-module.exports = mongoose.model('CodeBlocks', blockSchema);
+module.exports = mongoose.model('codeblocks', blockSchema);
