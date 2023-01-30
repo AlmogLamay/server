@@ -5,13 +5,13 @@ const CodeBlock = require('../models/CodeBlock');
 //Get all
 router.get('/getAllTitles', async (req, res) => {
 	try {
-		console.log('Nadav1');
+		//console.log('Nadav1');
 		const blocks = await CodeBlock.find();
-		console.log('Nadav2');
+		//console.log('Nadav2');
 		res.json(blocks);
-		console.log('Nadav3');
+		//console.log('Nadav3');
 	} catch (err) {
-		console.log('Nadav4');
+		//console.log('Nadav4');
 		res.status(500).json({ message: err.message });
 	}
 });
